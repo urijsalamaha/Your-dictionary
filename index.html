@@ -33,7 +33,7 @@
                                 <input type="password" name="password" placeholder="Password" />
                                 <input type="submit" name="submit" value="Submit"/>
                                 <hr />
-                                <input type="button" value="Or sign up" />
+                                <input id="button-sign-up" type="button" value="Or sign up" />
                             </form>
                         </div>  
                 </div>
@@ -42,6 +42,18 @@
                 </div>   
             </div>         
         </div>
+        <div id="curtain" class="curtain display-none"></div>
+        <div id="sign-up" class="display-none">
+            <div id="sign-up-header">Your dictionary</div>
+            <div id="sign-up-form">
+                <input type="text" name="name" placeholder="First and Last Name" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="password-for-join" placeholder="Password" />
+                <div>Show password</div>
+                <input type="button" value="Join" />
+            </div>
+        </div>
     </div>
+    <script src="js/your_dictionary.js"></script>
 </body>
 </html>
