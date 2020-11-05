@@ -17,16 +17,51 @@ header div {
   color: white;
   text-align: center;
 }
+@keyframes curtain-view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+@keyframes curtain-delete {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes signUp-delete {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .curtain {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: radial-gradient(at top left, white, #e1cc4f);
+  /* background-image: radial-gradient(at top left, white, #e1cc4f);*/
+  background-color: white;
   position: fixed;
   top: 0px;
-  opacity: 0.9;
+  animation-name: curtain-view;
+  animation-duration: 0.5s;
+  opacity: 0.7;
+}
+.curtain-delete {
+  animation-name: curtain-delete;
+  animation-duration: 0.5s;
+}
+.signUp-delete {
+  animation-name: signUp-delete !important;
+  animation-duration: 0.5s;
 }
 #sign-up {
   display: flex;
@@ -37,7 +72,8 @@ header div {
   position: fixed;
   top: 15%;
   left: 30%;
-  opacity: 1;
+  animation-name: curtain-view;
+  animation-duration: 0.5s;
 }
 .display-none {
   display: none !important;
