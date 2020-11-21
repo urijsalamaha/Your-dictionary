@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/your_dictionary.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css /">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
     <div class="main">
@@ -28,10 +30,12 @@
                             <p>
                                 Please sign in:
                             </p>
-                            <form action="" method="">
-                                <input type="text" name="login" placeholder="Login" />
-                                <input type="password" name="password" placeholder="Password" />
-                                <input type="submit" name="submit" value="Submit"/>
+                            <form id="signin" action="" method="">
+                                <p>Login:</p>
+                                <input type="text" name="login" />
+                                <p>Password:</p>
+                                <input type="password" name="password" />
+                                <input id="content-submit" type="submit" name="submit" value="Submit"/>
                                 <hr />
                                 <input id="button-sign-up" type="button" value="Or sign up" />
                             </form>
@@ -44,13 +48,48 @@
         </div>
         <div id="curtain" class="curtain display-none"></div>
         <div id="sign-up" class="display-none">
-            <div id="sign-up-header">Your dictionary</div>
-            <div id="sign-up-form">
-                <input type="text" name="name" placeholder=" First and Last Name" required />
-                <input type="email" name="email" placeholder=" Email" required />
-                <input type="password" name="password-for-join" placeholder=" Password" required />
-                <div>Show password</div>
-                <input type="button" value="Join" />
+            <div id="icon-left">
+                <span class="fa fa-angle-left fa-5x"></span>
+            </div>
+            <div id="sign-up-wrap">
+                <div id="sign-up-header">Your dictionary</div>                
+                <form id="list-of-forms">
+                    <div id="sign-up-form">
+                        <div>  
+                            <div class="textform">First Name:</div>                 
+                            <input type="text" name="name" class="textform" required />
+                        </div>  
+                        <div>
+                            <div class="textform">Last Name:</div>
+                            <input type="text" name="name" class="textform" required />
+                        </div>
+                        <div>
+                            <div class="textform">Email:</div>
+                            <input type="email" name="email" class="textform" required />
+                        </div>
+                        <div>    
+                            <div class="textform">Phone Number:</div>                    
+                            <input type="tel" name="tel" class="textform" required />
+                        </div>
+                        </div>
+                    <div id="sign-up-form-two" class="display-none">
+                        <div>
+                            <div class="textform">Username:</div>
+                            <input type="text" name="username" class="textform" required />
+                        </div>
+                        <div>
+                            <div class="textform">Password:</div>
+                            <input type="password" name="password-registation" required class="textform" />
+                            <div id="show" class="textform">Show password</div>
+                        </div>                       
+                        <div>
+                            <input id="buttonjoin" type="button" value="Join" class="textform" /> 
+                        </div>
+                    </div>                       
+                </form>                
+            </div>
+            <div id="icon-right">
+                <span class="fa fa-angle-right fa-5x" ></span>
             </div>
         </div>
     </div>
