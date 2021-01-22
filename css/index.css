@@ -1,0 +1,285 @@
+* {
+  font-size: 14px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px calc(100vh - 100px);
+}
+header {
+  grid-row: 1/2;
+  grid-column: 1/13;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b5df4;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: auto;
+}
+header .logo .logo_name {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  color: white;
+}
+.start {
+  width: 259px;
+  height: 100%;
+  margin-right: 5%;
+}
+.start form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#start_button {
+  width: auto;
+  height: auto;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+  background-color: #0b5df4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+#start_button:hover {
+  border: 2px solid white;
+  border-radius: 2.5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#start_button:focus {
+  outline: none;
+}
+#start_button:active {
+  background-color: #024cb1;
+  box-shadow: none;
+  transform: scale(0.9);
+}
+main {
+  grid-row: 2/3;
+  grid-column: 1/13;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../images/leather.jpg);
+  background-repeat: round;
+}
+main img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+}
+#first_image {
+  right: 5%;
+  top: 15%;
+  transform: rotate(30deg);
+}
+#second_image {
+  right: 5%;
+  top: 40%;
+  transform: rotate(-20deg);
+}
+#third_image {
+  right: 20%;
+  top: 20%;
+  transform: rotate(40deg);
+}
+#fourth_image {
+  right: 32%;
+  top: 25%;
+  transform: rotate(70deg);
+}
+#paper {
+  width: 30%;
+  height: 70vh;
+  left: 10%;
+  top: 8%;
+  transform: rotate(0deg);
+  opacity: 0.6;
+}
+#message {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  left: 13%;
+  top: 20%;
+  transform: rotate(0deg);
+  font-family: "Indie Flower", cursive;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#registration_form {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/leather.jpg);
+  background-repeat: round;
+  opacity: 0.95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registration_form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  width: 30vw;
+  height: 70vh;
+  background-color: #0b5df4;
+}
+.form_nav {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #024cb1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form_nav button {
+  width: auto;
+  height: auto;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+  background-color: #024cb1;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.active {
+  color: white !important;
+  text-decoration: underline;
+}
+.form_inputs {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.form_inputs div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.form_inputs p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding-left: 10%;
+}
+.form_inputs input {
+  width: 80%;
+  height: 28px;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.form_footer {
+  grid-column: 1/2;
+  grid-row: 4/6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.form_footer button {
+  width: 80%;
+  height: auto;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #024cb1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border: 2px solid #024cb1;
+}
+.form_footer button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+.form_footer p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-decoration: underline;
+  padding-bottom: 5%;
+}
+.none {
+  display: none !important;
+}
+#registration {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/6;
+  height: 70vh;
+  background-color: #0b5df4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#registration div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 6%;
+}
+#registration div p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding-left: 10%;
+}
+#registration div input {
+  width: 80%;
+  height: 28px;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+#registration div button {
+  width: 80%;
+  height: auto;
+  margin-bottom: 6%;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #024cb1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  align-self: center;
+  border: 2px solid #024cb1;
+}
+#registration div button:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+.align_form {
+  position: relative;
+  top: -50px;
+}
+#form {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+}

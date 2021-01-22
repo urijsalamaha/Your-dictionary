@@ -4,51 +4,55 @@
 /*header*/
 header {
   display: flex;
-  width: 100%;
-  height: 80px;
-  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #008000, #5b8b5b);
-  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #0b5df4;
 }
-header div {
+header .logo {
   display: flex;
-}
-header div {
-  display: flex;
-  width: 38%;
-  justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  justify-content: center;
+  width: 30%;
+  height: auto;
+}
+header .logo .logo_name {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
   color: white;
 }
 header nav {
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
-  width: 62%;
-  height: 100%;
-}
-header nav div {
-  display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: auto;
-  height: 100%;
-  padding-left: 3%;
-  padding-right: 3%;
+}
+header nav a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid #0b5df4;
+  border-radius: 2.5px;
 }
-header nav div:hover {
-  background-color: #b00000;
-  cursor: pointer;
+header nav a:hover {
+  border: 1px solid white;
+  border-radius: 2.5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header nav a:active {
+  background-color: #024cb1;
+  box-shadow: none;
+  transform: scale(0.9);
 }
 /*content*/
 #content {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../images/key.jpg);
+  background-image: url(../images/leather.jpg);
   background-repeat: round;
   background-attachment: fixed;
 }
@@ -67,32 +71,40 @@ main {
   padding-left: 5%;
   padding-right: 5%;
   align-self: flex-start;
-  margin-left: 19%;
+  margin-left: 10%;
   margin-top: 3%;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: white;
   background-color: #b00000;
   opacity: 0.7;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
 }
 /*table*/
 table {
   border-collapse: collapse;
-  width: 62%;
+  width: 80%;
   margin-top: 1%;
   background-color: #252f48;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
 }
 tr {
   text-align: left;
   width: 100%;
-  height: 30px;
-  border-bottom: 1px solid #37b5a5;
+  height: 40px;
+  border-bottom: 1px solid #cea797;
   color: #cad4d6;
 }
 tr:nth-child(1) {
-  color: #edb749;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
 }
 tr:last-child {
   border-bottom: none;
@@ -103,14 +115,14 @@ td {
 td:nth-child(1) {
   width: 10%;
   vertical-align: center;
-  border-right: 1px solid #37b5a5;
+  border-right: 1px solid #cea797;
 }
 td:nth-child(2),
 td:nth-child(3) {
   width: 45%;
   padding-left: 1%;
   vertical-align: center;
-  border-right: 1px solid #37b5a5;
+  border-right: 1px solid #cea797;
 }
 td:last-child {
   border-right: none;
